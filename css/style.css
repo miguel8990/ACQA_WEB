@@ -1,0 +1,173 @@
+/*Css do body, define a cor de fundo e a organização dos itens dentro dele em coluna*/
+body {
+  background-color: #fddede;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/*Define o header colado em cima da página, organização dos itens dentro dele, 
+além do estilo com a mesma cor do body para mesclar os dois*/
+header {
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  background-color: #fddede;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+/*Coloca o main pra baixo para ele não ser sobreposto pelo header*/
+main {
+  padding-top: 120px;
+  width: 90%;
+}
+
+/*Definição dos titulos em faixas centrais*/
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+/*Container aonde a tabela de exibição fica*/
+#listagem {
+  background-color: rgb(238, 104, 27);
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/*Estilo da tabela de exibição*/
+#tabela {
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+/*Container do titulo*/
+#titulo {
+  background-color: rgb(252, 0, 0);
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+
+/*Container mais geral para todos os objetos*/
+.container {
+  background-color: rgb(238, 104, 27);
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 400px;
+  flex-direction: column;
+}
+
+/*Estilo dos formularios*/
+form {
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/*Estilo dos textos antes do campos de entrada*/
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/*Estilo dos campos de entrada*/
+form input {
+  padding: 12px;
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/*Estilo dos botões*/
+form button {
+  background-color: white;
+  display: block;
+  margin: 20px auto 0 auto;
+  padding: 5px 10px;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/*Estilo pra quando o mouse estiver sobre os botões*/
+form button:hover {
+  background-color: black;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/*Container personalizado para o delete*/
+#delete {
+  background-color: rgb(238, 104, 27);
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 200px;
+  flex-direction: column;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/*Container personalizado para o formulario onde se digita o id do item de edição*/
+#formulario-editar {
+  background-color: rgb(238, 104, 27);
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 200px;
+  flex-direction: column;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  font-weight: bold;
+}
