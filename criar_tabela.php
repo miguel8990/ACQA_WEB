@@ -1,4 +1,5 @@
 <?php
+//arquivo usado para a criação de tabelas
 include 'conexao.php'; // arquivo de conexão com o banco
 
 //sql recebe um comando SQL para a criação de uma tabela
